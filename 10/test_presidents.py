@@ -4,7 +4,7 @@ from operator import itemgetter
 url_ddg = "https://api.duckduckgo.com"
 
 
-def test_presidents(assertTrue=None):
+def test_presidents():
     resp = requests.get(url_ddg + "/?q=presidents+of+the+united+states&format=json")
     rsp_data = resp.json()['RelatedTopics']
 
